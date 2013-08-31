@@ -7,4 +7,9 @@ module StudentsHelper
     form.input :kind, collection: collection, prompt: false, 
       input_html: { class: 'span8' }
   end
+
+  def translate_student_kind(kind)
+    value = Student::KINDS[kind]
+    t("view.students.#{value}")
+  end
 end

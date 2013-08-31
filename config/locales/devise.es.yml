@@ -15,7 +15,7 @@
   devise:
     failure:
       already_authenticated: 'Ya está conectado/a.'
-      unauthenticated: 'Necesita acceder a su cuenta o registrarse antes de continuar.'
+      unauthenticated: 'Necesita acceder a su cuenta.'
       unconfirmed: 'Necesita confirmar su cuenta antes de continuar.'
       locked: 'Su cuenta está bloqueada.'
       not_found_in_database: 'Contraseña o Email incorrecto.'

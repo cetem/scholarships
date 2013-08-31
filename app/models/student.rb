@@ -11,4 +11,8 @@ class Student < ActiveRecord::Base
 
   validates :firstname, :lastname, :identification, presence: true
   validates :identification, uniqueness: true
+
+  def to_s
+    [self.firstname, self.lastname].join(' ')
+  end
 end

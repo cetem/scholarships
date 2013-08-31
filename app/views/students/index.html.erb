@@ -20,7 +20,7 @@
               <td><%= student.firstname %></td>
               <td><%= student.lastname %></td>
               <td><%= student.identification %></td>
-              <td><%= student.kind %></td>
+              <td><%= translate_student_kind(student.kind) %></td>
               <td><%= link_to_show student %></td>
               <td><%= link_to_edit edit_student_path(student) if can? :update, student %></td>
               <td><%= link_to_destroy student if can? :destroy, student %></td>

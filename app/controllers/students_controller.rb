@@ -1,5 +1,9 @@
 class StudentsController < ApplicationController
   before_action :set_student, only:  [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  
+  check_authorization
+  load_and_authorize_resource
   
   # GET /students
   def index

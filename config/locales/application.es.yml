@@ -50,6 +50,7 @@
   menu:
     actions:
       logout: 'Salir de la aplicación'
+    students: 'Becados'
     users: 'Usuarios'
     
   messages:
@@ -63,6 +64,16 @@
         title:
           html: 'La búsqueda de <span class="label label-inverse">%{search}</span> no obtuvo ningún resultado.'
     students:
+      index_title: 'Listado de becador'
+      show_title: 'Detalle de becado'
+      new_title: 'Nuevo becado'
+      edit_title: 'Modificar becado'
+      correctly_created: 'Becado agregado correctamente.'
+      correctly_updated: 'Becado actualizado correctamente.'
+      stale_object_error: 'El becado no pudo ser actualizado, intente nuevamente.'
+      empty_index:
+        html: 'No se ha creado ningún becado hasta el momento, si quiere puede hacerlo desde el botón <span class="label label-info">Nuevo Becado</span>'
+      new: 'Nuevo Becado'
       copies: 'Fotocopias'
       dining: 'Comedor'
       software: 'Software'

@@ -10,5 +10,5 @@ Scholarships::Application.routes.draw do
     end
   end
   
-  root to: redirect('/users/sign_in')
+  root to: redirect('/students')
 end
