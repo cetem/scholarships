@@ -7,11 +7,19 @@
     
   activerecord:
     models:
+      student:
+        one: 'Becado'
+        other: 'Becados'
       user:
         one: 'Usuario'
         other: 'Usuarios'
       
     attributes:
+      student:
+        firstname: 'Nombre'
+        lastname: 'Apellido'
+        identification: 'DNI'
+        kind: 'Tipo de beca'
       user:
         name: 'Nombre'
         lastname: 'Apellido'
@@ -54,6 +62,12 @@
       empty_search:
         title:
           html: 'La búsqueda de <span class="label label-inverse">%{search}</span> no obtuvo ningún resultado.'
+    students:
+      copies: 'Fotocopias'
+      dining: 'Comedor'
+      software: 'Software'
+      transport: 'Transporte'
+      work: 'Trabajo'
     users:
       index_title: 'Listado de usuarios'
       show_title: 'Detalle de usuario'

@@ -1,0 +1,24 @@
+<div class="readonly-data">
+  <h2><%= @student %></h2>
+
+  <p>
+    <strong><%= Student.human_attribute_name 'firstname' %></strong>:
+    <%= @student.firstname %>
+  </p>
+  <p>
+    <strong><%= Student.human_attribute_name 'lastname' %></strong>:
+    <%= @student.lastname %>
+  </p>
+  <p>
+    <strong><%= Student.human_attribute_name 'identification' %></strong>:
+    <%= @student.identification %>
+  </p>
+  <p>
+    <strong><%= Student.human_attribute_name 'kind' %></strong>:
+    <%= @student.kind %>
+  </p>
+</div>
+<div class="form-actions">
+  <%= link_to t('label.edit'), edit_student_path(@student) if can? :update, @student %> |
+  <%= link_to t('label.list'), students_path %>
+</div>
